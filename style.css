@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    
+}
+
+header, main{
+    display: flex;
+}
+
+header{
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    flex-basis: 600px;
+}
+
+article{
+    flex-basis: 60%;
+}
+
+div{
+    background: gray;
+    flex-basis: 20%;
+    order: -1;
+}
+
+aside{
+    background: teal;
+    flex-basis: 20%;
+}
+
+header, footer{
+    background: lime;
+    flex-basis: 100px;
+}
+/* media query */
+@media all and (max-width:640px) {
+    main {
+        flex-direction: column;
+    }
+}
